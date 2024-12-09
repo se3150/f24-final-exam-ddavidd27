@@ -15,7 +15,7 @@ jobs:
       - name: Install pytest and plugins
         run: /usr/bin/pip3 install pytest pytest-describe pytest-mock
       - name: Run pytest
-        run: /usr/bin/python3 -m pytest test_brute.py --color=yes
+        run: /usr/bin/python3 -m pytest --spec test_brute.py 
 
   RunFunctionalTests:
     runs-on: ubuntu-latest
